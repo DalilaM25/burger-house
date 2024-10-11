@@ -1,19 +1,30 @@
-# Проектная работа 11-го спринта
+# Проект: Бургерная
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat&logo=typescript&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React-18-58E1FF?logo=react)](#)
+[![RTK](https://img.shields.io/badge/Redux_Toolkit-8C5AFF?style=flat&logo=redux&logoColor=white)](#)
 
-[Макет](<https://www.figma.com/file/vIywAvqfkOIRWGOkfOnReY/React-Fullstack_-Проектные-задачи-(3-месяца)_external_link?type=design&node-id=0-1&mode=design>)
+Где-то на краю Вселенной любая форма жизни может заказать тот бургер, который она хочет… Конечно, с помощью приложения.
 
-[Чеклист](https://www.notion.so/praktikum/0527c10b723d4873aa75686bad54b32e?pvs=4)
+## Описание
 
-## Этапы работы:
+SPA приложение космической бургерной с адаптивным дизайном. Для организации кода применена архитектурная методология FSD.
+При создании компонентов использовалась UI-библиотека ([@zlden/react-developer-burger-ui-components](https://www.npmjs.com/package/@zlden/react-developer-burger-ui-components?activeTab=versions)).
 
-1. Разверните проект и ознакомьтесь с кодом. Все необходимые вам компоненты уже созданы и лежат в папке `src/components`
 
-2. Настройте роутинг.
+## Live просмотр
+![Главная страница сайта](./docs/burger_home.png)
 
-3. Напишите функционал запросов данных с сервера, используя `Redux` и глобальный `store`. Сами "ручки" уже прописаны и лежат в `utils/burger-api.ts`
 
-4. Настройте авторизацию и создайте защищённые роуты.
+## Технологический стек
+- TypeScript
+- React 18
+- Redux Toolkit
+- React Router DOM v6.10.0
+- Webpack
 
-## Важно:
+## Что можно доработать...
+Приложение находится в полностью рабочем состоянии, все необходимые функции реализованы, а пул-реквесты проверены и одобрены ревьюером. Тем не менее планирую добавить/изменить несколько вещей в ближайшее время.
 
-Для корректной работы запросов к серверу необходимо добавить переменную BURGER_API_URL в окружение. Сама ссылка находится в файле `.env.example`.
+- [] Валидация форм
+- [] Сохранение корзины при перезагрузке страницы
+- [] Очистка истории заказов
